@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- container to contain all the components -->
+    <div class="container">
+      <!-- the aside bar -->
+      <div class="side-bar">
+        <div class="aside-links">
+          <div class="logo">
+            <img src="/assets/ecommerce-Vector.png" alt="ecommerce-Vector" />
+            <img src="assets/Finapp.png" alt="" />
+          </div>
+          <div class="links">
+            <div class="dashboard">
+              <img src="assets/icons-dashboard.svg" alt="" />
+              <p>Dashboard</p>
+            </div>
+            <div class="invoice">
+              <img src="assets/icons-invoices.svg" alt="" />
+              <p>Invoice</p>
+            </div>
+            <div class="wallet">
+              <img src="assets/icons-wallet.svg" alt="" />
+              <p>Wallet</p>
+            </div>
+            <div class="report">
+              <img src="assets/icons-chart.svg" alt="" />
+              <p>Report</p>
+            </div>
+            <div class="transaction">
+              <img src="assets/icons-transfer.svg" alt="" />
+              <p>Transaction</p>
+            </div>
+          </div>
+        </div>
+        <div class="log-out">
+          <div class="transaction">
+            <img src="assets/icons-settings.svg" alt="" />
+            <p>Setting</p>
+          </div>
+          <div class="transaction">
+            <img src="assets/icons-help.svg" alt="" />
+            <p>Help</p>
+          </div>
+          <div class="transaction">
+            <img src="assets/icons-arrow-left.svg" alt="" />
+            <p>Log Out</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- center section -->
+      <div class="center-bar">
+        <!-- transaction section -->
+        <div class="total">
+          <div class="containe">
+            <h2 class="balance">Total Ballance</h2>
+            <div class="last-tran">
+              <p class="green-color">+$28,55</p>
+              <span>Last Transaction</span>
+            </div>
+            <div class="top-withdraw">
+              <button>TOP UP</button>
+              <a>WITHDRAW</a>
+            </div>
+          </div>
+          <div class="wallet-sec">
+            <p>$200<span>.58</span></p>
+            <span>WALLET AMOUNT</span>
+          </div>
+        </div>
+
+        <div class="total-income">
+          <div class="income">
+            <span>Total Income</span>
+            <p>$ 18532<span>.52</span></p>
+            <div>
+              <img src="assets/chart-percentage-icons-grown up.svg" alt="">
+            </div>
+          </div>
+          <div class="saves">
+            <span>Total Saves</span>
+            <p>$ 137<span>.43</span></p>
+            <div>
+              <img src="assets/chart-percentage-icons-grown down.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="last-transac"></div>
+      </div>
+
+      <!-- right section -->
+      <div class="right-bar">
+        <div class="total-balance"></div>
+        <div class="total-income"></div>
+        <div class="last-transac"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

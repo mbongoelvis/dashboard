@@ -1,0 +1,240 @@
+:root{
+    --bg-color: #e9e9ec;
+    --link-color: #A1A0BD;
+    --blue-color: #4C49ED;
+    --green-color: #4FD18B;
+    --small-bg: #DCF5E8;
+    --btn-color:#E4E3FF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:mulish ;
+    text-decoration: none;
+}
+.container{
+    background-color: var(--bg-color);
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    padding-right: 2rem;
+    gap: 2rem;
+    grid-template-columns: 13rem 1fr 1fr;
+}
+.side-bar{
+    background-color: white;
+}
+
+/* side bar section */
+.side-bar{
+    border-radius: 0 10px 10px 0;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    margin-bottom: 6rem;
+    margin-left: 25%;
+    margin-top: -20px;
+    animation: popin 2s ease;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: popin 2s ease;
+}
+.links div{
+    font-weight: 600;
+    color: var(--link-color);
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 2rem;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.links div:first-of-type{
+    font-weight: 800;
+    color: var(--blue-color);
+    background-color: var(--btn-color);
+}
+.links div:hover, .log-out div:hover{
+    padding-left: 20px;
+    background-color: rgb(242, 242, 242);
+}
+.links{
+    padding-bottom: 4.5rem;
+    border-bottom: 1px solid var(--bg-color);
+}
+.log-out div{
+    font-weight: 600;
+    color: var(--link-color);
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 2rem;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.log-out{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    animation: popin 2s ease;
+}
+.log-out div:last-of-type{
+    margin-top: 5rem;
+}
+
+/* main-section styles */
+.center-bar, .right-bar{
+    display: grid;
+    grid-template-rows: 15rem 9rem auto;
+    gap: 2rem;
+    padding: 2rem 0;
+    background: transparent;
+}
+.center-bar div, .right-bar div{
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+/* right section styles */
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+.total::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 200%;
+    top: -45%;
+    border-radius: 50%;
+    right: -20%;
+    background-color: var(--blue-color);
+}
+.z-index{
+    z-index: 5;
+}
+.top-withdraw{
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    margin-top: .4rem;
+}
+.top-withdraw button{
+    padding: .5rem 1.5rem;
+    background-color: var(--blue-color);
+    color: white;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: .3s linear;
+    border: none;
+    cursor: pointer;
+    animation: popin 2s ease;
+}
+.top-withdraw button:hover{
+    background: transparent;
+    border:  .01rem solid var(--blue-color);
+    color: var(--blue-color);
+}
+.top-withdraw a{
+    padding: .5rem 1.5rem;
+    font-size: .8rem;
+    color: var(--blue-color);
+    font-weight: 700;
+    border-radius: 30px;
+    border: 1px solid var(--blue-color);
+    transition: .3s linear;
+    cursor: pointer;
+    animation: popin 2s ease;
+}
+.top-withdraw a:hover{
+    color: white;
+    background-color: var(--blue-color);
+}
+.balance{
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+.green-color{
+    color: var(--green-color);
+}
+.last-tran{
+    margin-bottom: .8rem;
+}
+.last-tran p{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.last-tran span{
+    opacity: .6;
+    font-weight: 500;
+}
+.wallet-sec{
+    display: flex;
+    color: whitesmoke;
+    flex-direction: column;
+    align-items: center;
+    background: var(--blue-color);
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    right: 11%;
+    bottom: 36%;
+}
+.wallet-sec p{
+    font-size: 2.9rem;
+    font-weight: 800;
+    width: 100%;
+    background: var(--blue-color);
+}
+.wallet-sec p>span{
+    font-size: 1.2rem;
+    color: var(--link-color);
+}
+.wallet-sec span{
+    background-color: var(--blue-color);
+    width: 100%;
+    color: var(--link-color);
+}
+.total-income{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2rem;
+}
+.total-income .income{
+    padding: .7rem 1rem;
+    background-color: white;
+}
+.total-income .saves{
+    padding: .7rem 1rem;
+    background-color: white;
+}
+
+
+
+/* animatins */
+@keyframes popin{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
